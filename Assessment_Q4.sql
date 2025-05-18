@@ -15,6 +15,6 @@ FROM
         LEFT JOIN
     savings_savingsaccount s ON s.owner_id = u.id
         WHERE s.confirmed_amount > 0
-        AND CONCAT(u.first_name, ' ', u.last_name) NOT LIKE '%Test%'
+        AND CONCAT(u.first_name, ' ', u.last_name) NOT LIKE '%Test%' -- I filter out all Test accounts
 GROUP BY u.id , CONCAT(u.first_name, ' ', u.last_name) , u.date_joined
 ORDER BY estimated_clv DESC
