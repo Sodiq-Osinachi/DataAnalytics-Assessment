@@ -79,6 +79,7 @@ I realized accounts with no transaction records would be excluded if only MAX(tr
 The task stated to use only active accounts, but no information on what qualifies as "active". I assumed all the accounts are active
 3.	Handling NULL values for transaction dates
 I used the COALESCE function to replace null values with a default or placeholder, improving the robustness of the logic when dealing with missing records.
+
  
 ASSIGNMENT FOUR
 Task Overview: Customer Lifetime Value (CLV) Estimation
